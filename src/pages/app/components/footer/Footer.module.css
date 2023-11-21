@@ -1,0 +1,25 @@
+.footer {
+  /*background-color: var(--colorPrimary-a10);*/
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  color: var(--text-color);
+
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-right: var(--page-padding);
+  padding-left: var(--page-padding);
+
+  > .links {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 16px;
+  }
+}

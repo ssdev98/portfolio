@@ -1,0 +1,27 @@
+{
+    "translation": {
+        "about": "Um",
+        "about1": "Hi, mein Name ist",
+        "about2": "Ich bin ein Softwareentwickler mit Sitz in Casablanca",
+        "about3": "Ich baue hochwertige Softwareprodukte",
+        "about4": "Ich bin ein Softwareentwickler mit Erfahrung in Mobil- und Webanwendungen. Ich kann hochmoderne, qualitativ hochwertige Anwendungen erstellen, die kleinen und großen Unternehmen einen Mehrwert bieten.",
+        "blog": "Blog",
+        "choose_subject": "Wählen Sie ein Thema",
+        "contact_form": "Kontakt Formular",
+        "contact_me": "Kontaktiere mich",
+        "createdBy": "Hergestellt mit ❤️ von Soufiane Saadouni",
+        "email": "Email",
+        "email_required": "E-Mail ist erforderlich!",
+        "full_name": "Vollständiger Name",
+        "full_name_required": "Vollständiger Name ist erforderlich!",
+        "message": "Nachricht",
+        "message_required": "Nachricht ist erforderlich!",
+        "my_name": "Soufiane Saadouni",
+        "projects": "Projekte",
+        "send_message": "Nachricht senden",
+        "services": "Dienstleistungen",
+        "tech_i_use": "Technologien, die ich verwende",
+        "technologies": "Technologien",
+        "welcome": "Hallo!"
+    }
+}

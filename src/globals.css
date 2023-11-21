@@ -1,0 +1,471 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@700&display=swap');
+
+:root {
+  transition: all 0.5s ease;
+
+  /*Notes
+  Always name your classes to avoid problems
+  Always set the root parent page size
+  */
+
+  /*  TODO: https://bem-cheat-sheet.9elements.com/ */
+
+  /* Primary color shades */
+  --colorPrimary-a10: color-mix(in srgb, var(--colorPrimary), transparent 90%);
+  --colorPrimary-a20: color-mix(in srgb, var(--colorPrimary), transparent 80%);
+  --colorPrimary-a30: color-mix(in srgb, var(--colorPrimary), transparent 70%);
+  --colorPrimary-a40: color-mix(in srgb, var(--colorPrimary), transparent 60%);
+  --colorPrimary-a50: color-mix(in srgb, var(--colorPrimary), transparent 50%);
+  --colorPrimary-a60: color-mix(in srgb, var(--colorPrimary), transparent 40%);
+  --colorPrimary-a70: color-mix(in srgb, var(--colorPrimary), transparent 30%);
+  --colorPrimary-a80: color-mix(in srgb, var(--colorPrimary), transparent 20%);
+  --colorPrimary-a90: color-mix(in srgb, var(--colorPrimary), transparent 10%);
+
+  /* Secondary color shades */
+  --colorSecondary-a10: color-mix(
+    in srgb,
+    var(--colorSecondary),
+    transparent 90%
+  );
+  --colorSecondary-a20: color-mix(
+    in srgb,
+    var(--colorSecondary),
+    transparent 80%
+  );
+  --colorSecondary-a30: color-mix(
+    in srgb,
+    var(--colorSecondary),
+    transparent 70%
+  );
+  --colorSecondary-a40: color-mix(
+    in srgb,
+    var(--colorSecondary),
+    transparent 60%
+  );
+  --colorSecondary-a50: color-mix(
+    in srgb,
+    var(--colorSecondary),
+    transparent 50%
+  );
+  --colorSecondary-a60: color-mix(
+    in srgb,
+    var(--colorSecondary),
+    transparent 40%
+  );
+  --colorSecondary-a70: color-mix(
+    in srgb,
+    var(--colorSecondary),
+    transparent 30%
+  );
+  --colorSecondary-a80: color-mix(
+    in srgb,
+    var(--colorSecondary),
+    transparent 20%
+  );
+  --colorSecondary-a90: color-mix(
+    in srgb,
+    var(--colorSecondary),
+    transparent 10%
+  );
+
+  /* Tertiary/Accent color shades */
+  --colorTertiary-a10: color-mix(
+    in srgb,
+    var(--colorTertiary),
+    transparent 90%
+  );
+  --colorTertiary-a20: color-mix(
+    in srgb,
+    var(--colorTertiary),
+    transparent 80%
+  );
+  --colorTertiary-a30: color-mix(
+    in srgb,
+    var(--colorTertiary),
+    transparent 70%
+  );
+  --colorTertiary-a40: color-mix(
+    in srgb,
+    var(--colorTertiary),
+    transparent 60%
+  );
+  --colorTertiary-a50: color-mix(
+    in srgb,
+    var(--colorTertiary),
+    transparent 50%
+  );
+  --colorTertiary-a60: color-mix(
+    in srgb,
+    var(--colorTertiary),
+    transparent 40%
+  );
+  --colorTertiary-a70: color-mix(
+    in srgb,
+    var(--colorTertiary),
+    transparent 30%
+  );
+  --colorTertiary-a80: color-mix(
+    in srgb,
+    var(--colorTertiary),
+    transparent 20%
+  );
+  --colorTertiary-a90: color-mix(
+    in srgb,
+    var(--colorTertiary),
+    transparent 10%
+  );
+
+  /* Neutral color shades */
+  --colorNeutral-a10: color-mix(in srgb, var(--colorNeutral), transparent 90%);
+  --colorNeutral-a20: color-mix(in srgb, var(--colorNeutral), transparent 80%);
+  --colorNeutral-a30: color-mix(in srgb, var(--colorNeutral), transparent 70%);
+  --colorNeutral-a40: color-mix(in srgb, var(--colorNeutral), transparent 60%);
+  --colorNeutral-a50: color-mix(in srgb, var(--colorNeutral), transparent 50%);
+  --colorNeutral-a60: color-mix(in srgb, var(--colorNeutral), transparent 40%);
+  --colorNeutral-a70: color-mix(in srgb, var(--colorNeutral), transparent 30%);
+  --colorNeutral-a80: color-mix(in srgb, var(--colorNeutral), transparent 20%);
+  --colorNeutral-a90: color-mix(in srgb, var(--colorNeutral), transparent 10%);
+
+  /**/
+
+  --background-color: var(--colorPrimary);
+  --text-color: var(--colorSecondary);
+  --border-color: gainsboro;
+  --cta-button-color: var(--colorTertiary);
+  --input-outline-color: var(--colorTertiary);
+
+  /* Semantic colors */
+  --positive-color: #0000ff;
+  --info-color: #008000;
+  --negative-color: #ff0000;
+  --warning-color: #ffa600;
+
+  /* Fonts */
+  /* https://fonts.google.com/ */
+  /*TODO support arabic by introducing variables*/
+  /*font-family: 'Noto Naskh Arabic', serif; */
+  font-family: Lato, 'Segoe UI Symbol', sans-serif !important;
+
+  /* Sometimes this can affect elements like an icon inside a button */
+  line-height: 1.5;
+  --font-size-small: 1rem; /* 16px */
+  --font-size-medium: 1.5rem; /* 24px */
+  --font-size-large: 2rem; /* 32px */
+
+  /* Border radius*/
+  --border-radius-small: 0.25rem; /* 4px */
+  --border-radius-medium: 0.5rem; /* 8px */
+  --border-radius-large: 1rem; /* 16px */
+
+  /* Spacing */
+  --spacing-small: 0.25rem; /* 4px */
+  --spacing-medium: 0.5rem; /* 8px */
+  --spacing-large: 1rem; /* 16px */
+
+  /* Responsive design breakpoints */
+  --breakpoint-small: 480px;
+  --breakpoint-medium: 768px;
+  --breakpoint-large: 1024px;
+
+  --page-padding-small: 24px;
+  --page-padding-medium: 48px;
+  --page-padding-large: 90px;
+
+  --avatar-small: 100px;
+  --avatar-medium: 150px;
+  --avatar-large: 200px;
+
+  --grid-cols-count-1: 1;
+  --grid-cols-count-2: 2;
+  --grid-cols-count-3: 3;
+
+  --toggle-theme-button-color: red;
+  --settings-display: none;
+
+  /*color-scheme: light dark;*/
+
+  font-smooth: always;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+* {
+  outline: rgba(255, 0, 0, 25) 2px solid; /* */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  /*TODO support arabic by introducing variables
+  direction: rtl;*/
+
+  /*  background-color: transparent !important;*/
+  /*To disable zoom by double tap in mobile devices*/
+  touch-action: manipulation;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*scroll-behavior: smooth;*/
+}
+
+::-webkit-scrollbar {
+  background-color: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border: 3px solid #5e5e5e;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #5e5e5e;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease;
+  /* transform: translate(-100%);*/
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  /* transform: translate(0);*/
+}
+
+/*
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {}*/
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    transition: all 0.5s ease;
+    /* Primary color*/
+    --colorPrimary: white;
+
+    /* Secondary color*/
+    --colorSecondary: #273043;
+
+    /* Tertiary/Accent color*/
+    --colorTertiary: #276fbf;
+
+    /* Neutral color */
+    --colorNeutral: #000;
+
+    --color-text: #000;
+    --color-background: #000;
+  }
+
+  ::selection {
+    background-color: var(--colorTertiary);
+    color: var(--colorPrimary);
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    transition: all 0.5s ease;
+
+    /* Primary color*/
+    --colorPrimary: #3c4043;
+
+    /* Secondary color*/
+    --colorSecondary: #fdfffc;
+
+    /* Tertiary/Accent color*/
+    --colorTertiary: #8ab4f8;
+
+    /* Neutral color*/
+    --colorNeutral: #000;
+
+    --color-text: #000;
+    --color-background: #000;
+  }
+
+  ::selection {
+    background-color: var(--colorTertiary);
+    color: var(--colorPrimary);
+  }
+}
+
+/* https://stackoverflow.com/a/56550819 */
+/* To dynamically change color theme*/
+[data-theme='light'] {
+  transition: all 0.5s ease;
+  /* Primary color*/
+  --colorPrimary: white;
+
+  /* Secondary color*/
+  --colorSecondary: #273043;
+
+  /* Tertiary/Accent color*/
+  --colorTertiary: #276fbf;
+
+  /* Neutral color*/
+  --colorNeutral: #000;
+
+  --color-text: #000;
+  --color-background: #000;
+
+  ::selection {
+    background-color: var(--colorTertiary);
+    color: var(--colorPrimary);
+  }
+}
+
+[data-theme='dark'] {
+  transition: all 0.5s ease;
+  /* Primary color*/
+  --colorPrimary: #3c4043;
+
+  /* Secondary color*/
+  --colorSecondary: #fdfffc;
+
+  /* Tertiary/Accent color*/
+  --colorTertiary: #8ab4f8;
+
+  /* Neutral color*/
+  --colorNeutral: #000;
+
+  --color-text: #000;
+  --color-background: #000;
+
+  ::selection {
+    background-color: var(--colorTertiary);
+    color: var(--colorPrimary);
+  }
+}
+
+/* Responsive design */
+/* https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints */
+
+/* 1080 - 1920 Large screens,Desktop */
+@media screen and (min-width: 1080px) and (max-width: 1920px) {
+  :root {
+    --page-padding: var(--page-padding-large);
+    --avatar-size: var(--avatar-large);
+    --grid-cols-count: var(--grid-cols-count-3);
+    --items-number: 16;
+    --details-padding: 164px;
+  }
+}
+
+/* 1025 - 1200 Large screens,Desktop */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  :root {
+    --page-padding: var(--page-padding-large);
+    --avatar-size: var(--avatar-large);
+    --grid-cols-count: var(--grid-cols-count-3);
+    --items-number: 14;
+    --details-padding: 164px;
+  }
+}
+
+/* 769 - 1024 Small Screens, Laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --page-padding: var(--page-padding-medium);
+    --avatar-size: var(--avatar-medium);
+    --grid-cols-count: var(--grid-cols-count-2);
+    --items-number: 14;
+    --details-padding: 64px;
+  }
+}
+
+/* 481 - 768 iPads, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  :root {
+    --page-padding: var(--page-padding-medium);
+    --avatar-size: var(--avatar-medium);
+    --settings-display: block;
+    --grid-cols-count: var(--grid-cols-count-1);
+    --items-number: 6;
+    --details-padding: 16px;
+  }
+}
+
+/* 320 - 480 Mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  :root {
+    --page-padding: var(--page-padding-small);
+    --avatar-size: var(--avatar-small);
+    --settings-display: block;
+    --grid-cols-count: var(--grid-cols-count-1);
+    --items-number: 6;
+    --details-padding: 16px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+    /* transform: none;*/
+  }
+}
+
+/* Common style for print */
+@media print {
+  /* https://www.w3.org/TR/css-page-3/ */
+  /*
+  @page {
+    size: 100in 100in;  width and height of paper
+    margin: 2in;  margin of content 
+  }*/
+
+  @page: first {
+  } /* First page */
+
+  body {
+  }
+
+  /*
+  TODO : https://www.sitepoint.com/css-printer-friendly-pages/
+  */
+}
+
+/* TODO: A4 style sheet*/
+@media print and (width: 21cm) and (height: 29.7cm) {
+  @page {
+  }
+}
+
+/* TODO:  US Letter style sheet*/
+@media print and (width: 8.5in) and (height: 11in) {
+  @page {
+  }
+}
+
+/* TODO: Legal style sheet*/
+@media print and (width: 8.5in) and (height: 14in) {
+  @page {
+  }
+}
+
+/* TODO: Tabloid style sheet*/
+@media print and (width: 11in) and (height: 17in) {
+  @page {
+  }
+}
+
+/* For screen readers that reads the page out loud */
+@media speech {
+}

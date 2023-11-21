@@ -1,13 +1,47 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- TODO: https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <!--user-scalable=0 is used to prevent users from resizing/pinch/zoom the content in a mobile platform-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <!--https://ogp.me/-->
+
+    <!--Facebook and Linkedin-->
+    <meta property="og:title" content="Soufiane Portfolio" />
+    <meta property="og:type" content="website" />
+    <!-- TODO: content = url+/assets/illustrations/preview.png-->
+    <meta property="og:image" content="" />
+    <!-- TODO: url = your website link-->
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="Hi, My name is Soufiane and i'm a software developer" />
+
+    <!--Twitter-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@soufiane_dev" />
+    <meta name="twitter:creator" content="@soufiane_dev" />
+    <!-- TODO: content = url+/assets/illustrations/preview.png-->
+    <meta name="twitter:image" content="" />
+
+    <!--IOS meta tags-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Soufiane Portfolio">
+    <!--TODO href="assets/icon.png"-->
+    <link rel="apple-touch-icon" href="">
+
+    <meta name="copyright" content="© 2023 Soufiane Saadouni">
+
+
+    <title>Soufiane Portfolio</title>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+
 </html>

@@ -1,0 +1,148 @@
+.contact {
+  scroll-margin-top: 80px;
+
+  padding-right: var(--page-padding);
+  padding-left: var(--page-padding);
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  > .title {
+    width: 100%;
+
+    > p {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--text-color);
+      white-space: nowrap; /* To prevent text to go to the next line*/
+    }
+  }
+
+  > p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+
+  > form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    > fieldset {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      gap: 16px;
+
+      > label {
+        display: none;
+      }
+
+      > input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        outline: 2px solid transparent;
+        font-size: 1.2rem;
+        border: 1px solid gray;
+        resize: none;
+        border-radius: 4px;
+        font-family: inherit;
+
+        &:focus {
+          border: none;
+          outline: 2px solid var(--input-outline-color);
+          filter: drop-shadow(0 0 2px gainsboro);
+        }
+      }
+
+      > select {
+        width: 100%;
+        padding: 16px;
+        outline: 2px solid transparent;
+        font-size: 1.2rem;
+        border: 1px solid gray;
+        resize: none;
+        border-radius: 4px;
+        font-family: inherit;
+        cursor: pointer;
+
+        &:focus {
+          border: none;
+          outline: 2px solid var(--input-outline-color);
+          filter: drop-shadow(0 0 2px gainsboro);
+        }
+      }
+    }
+
+    > input[type='submit'] {
+      width: 100%;
+      outline: none;
+      font-size: 1rem;
+      cursor: pointer;
+      padding: 12px;
+      background-color: var(--cta-button-color);
+      border: 1px solid transparent;
+      border-radius: 4px;
+      font-family: inherit;
+      font-weight: bold;
+      color: var(--colorPrimary);
+
+      &:hover {
+        background-color: var(--colorTertiary-a80);
+        filter: drop-shadow(0 0 2px gainsboro);
+
+        color: white;
+      }
+
+      &:focus {
+        background-color: var(--cta-button-color);
+      }
+    }
+
+    .loading {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--colorSecondary);
+      animation: rotationAnim 1s linear infinite;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    > p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    > p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@keyframes rotationAnim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

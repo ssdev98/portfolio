@@ -1,0 +1,27 @@
+{
+  "translation": {
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "technologies": "Tecnologías",
+    "blog": "Blog",
+    "tech_i_use": "Tecnologías que uso",
+    "contact_form": "Formulario de contacto",
+    "contact_me": "Contácteme",
+    "about1": "Hola, mi nombre es ",
+    "my_name": "Soufiane Saadouni",
+    "about2": "Soy un desarrollador de software con sede en Casablanca",
+    "about3": "Construyo productos de software de alta calidad",
+    "about4": "Soy un desarrollador de software con experiencia en aplicaciones web y móviles. Puedo crear aplicaciones de última generación de alta calidad que aportan valor tanto a organizaciones pequeñas como grandes.",
+    "createdBy": "Elaborado con ❤️ por Soufiane Saadouni",
+    "full_name": "Nombre completo",
+    "full_name_required": "¡Se requiere el nombre completo!",
+    "email": "Correo electrónico",
+    "email_required": "¡Correo electrónico es requerido!",
+    "choose_subject": "Elige un tema",
+    "message": "Mensaje",
+    "message_required": "¡Se requiere mensaje!",
+    "send_message": "Enviar mensaje",
+    "welcome": "Hola"
+  }
+}

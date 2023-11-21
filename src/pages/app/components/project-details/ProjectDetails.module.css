@@ -1,0 +1,48 @@
+.wrapper {
+  width: 100vw;
+  height: 100dvh;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  animation: overlayOpacity 500ms ease;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+
+  > button {
+    all: unset; /* Order here matter*/
+    z-index: 1;
+    top: 48px;
+    right: 48px;
+    font-size: 4rem;
+    color: var(--colorSecondary);
+    cursor: pointer;
+    position: absolute;
+  }
+
+  > .content {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: var(--details-padding);
+    padding-left: var(--details-padding);
+  }
+}
+
+@keyframes overlayOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

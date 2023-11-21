@@ -1,0 +1,39 @@
+.social-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  line-height: 0; /*Important */
+
+  > div {
+    /*    
+    border: 1px solid black;
+    border-radius: 50%;
+*/
+    > a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: black;
+      > img {
+        width: 24px;
+        height: 24px;
+        filter: contrast(0%);
+
+        &:hover {
+          filter: none;
+        }
+      }
+    }
+  }
+
+  > p {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #485665;
+
+    > span {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

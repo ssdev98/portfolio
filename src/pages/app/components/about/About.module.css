@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.about {
+  scroll-margin-top: 80px;
+
+  padding-right: var(--page-padding);
+  padding-left: var(--page-padding);
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*background-color: #36373A;*/
+
+  gap: 64px;
+  /*color: var(--colorPrimary);*/
+
+  /* background-color: color-mix(in lch, var(--colorPrimary), black);*/
+
+  > .avatar {
+    width: var(--avatar-size);
+    aspect-ratio: 1/1;
+    background-image: url(https://avatars.githubusercontent.com/u/61183970?v=4);
+    border-radius: 50%;
+    background-size: contain;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  > .message {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    > p {
+      &:nth-child(1) {
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        color: var(--colorTertiary);
+      }
+
+      &:nth-child(2) {
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        color: var(--text-color);
+      }
+      &:nth-child(3) {
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        color: var(--text-color);
+      }
+
+      &:nth-child(4) {
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        color: var(--text-color);
+      }
+      &:nth-child(5) {
+        max-width: 500px;
+        font-size: 1.2rem;
+        color: var(--text-color);
+        text-justify: auto;
+      }
+    }
+  }
+
+  /*  > span {
+      color: var(--colorTertiary);
+      font-weight: bold;
+   
+      font-style: italic;
+      background-image: linear-gradient(
+        to right,
+        #355eff,
+        #0033ff
+      ); background-color: linear-gradient(to right,#3e63f3,#1A659E);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }*/
+}
+
+@media screen and (max-width: 480px) {
+  .jumbotron {
+    padding-right: 16px;
+
+    > .avatar {
+      &:hover {
+        outline: 1px solid #1a659e;
+        cursor: pointer;
+      }
+    }
+  }
+}

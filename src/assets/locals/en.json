@@ -1,0 +1,27 @@
+{
+  "translation": {
+    "about": "About",
+    "projects": "Projects",
+    "services": "Services",
+    "technologies": "Technologies",
+    "blog": "Blog",
+    "tech_i_use": "Technologies That I Use",
+    "contact_form": "Contact Form",
+    "contact_me": "Contact Me",
+    "about1": "Hi, My name is ",
+    "my_name": "Soufiane Saadouni",
+    "about2": "I'm a Software Developer Based in Casablanca",
+    "about3": "I Build High Quality Software Products",
+    "about4": "I'm a software developer experienced in mobile and web applications, I can build state of the art high quality applications that brings value from small to big organisations.",
+    "createdBy": "Crafted with ❤️ by Soufiane Saadouni",
+    "full_name": "Full Name",
+    "full_name_required": "Full name is required!",
+    "email": "Email",
+    "email_required": "Email is required!",
+    "choose_subject": "Choose a subject",
+    "message": "Message",
+    "message_required": "Message is required!",
+    "send_message": "Send Message",
+    "welcome": "Hi"
+  }
+}

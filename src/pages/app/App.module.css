@@ -1,0 +1,369 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+
+  > header {
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 80px;
+    padding-right: var(--page-padding);
+    padding-left: var(--page-padding);
+
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+
+    > div {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+
+        > .hamburger {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          > div:nth-child(1) {
+            width: 24px;
+            height: 2px;
+            border-radius: 8px;
+            background-color: var(--text-color);
+          }
+          > div:nth-child(2) {
+            width: 24px;
+            height: 2px;
+            border-radius: 8px;
+            background-color: var(--text-color);
+          }
+          > div:nth-child(3) {
+            width: 24px;
+            height: 2px;
+            border-radius: 8px;
+            background-color: var(--text-color);
+          }
+
+          &:focus {
+            outline: 1px solid var(--colorTertiary);
+          }
+        }
+
+        > .logo {
+          > a {
+            cursor: pointer;
+
+            color: var(--text-color);
+            text-decoration: none;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      > nav {
+        /* filter: blur(4px);*/
+        > ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          gap: 16px;
+
+          > li {
+            cursor: pointer;
+
+            > a {
+              color: var(--text-color);
+              text-decoration: none;
+
+              &:hover {
+                color: var(--colorTertiary);
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      > .actions {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+
+        > button:nth-child(1) {
+        }
+
+        > button:nth-child(2) {
+          all: unset; /* To remove default style of button*/
+          cursor: pointer;
+          color: var(--colorSecondary);
+          display: block;
+          border-radius: 50%;
+          text-align: center;
+          text-decoration: none;
+          line-height: 0; /*Important */
+
+          &:hover {
+            background-color: var(--colorTertiary-a10);
+            filter: drop-shadow(0 0 8px gainsboro);
+          } /**/
+        }
+
+        > button:nth-child(3) {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          padding-right: 24px;
+          padding-left: 24px;
+          outline: none;
+          font-size: 1rem;
+          font-weight: 500;
+          border: none;
+          cursor: pointer;
+          color: var(--colorPrimary);
+          border-radius: 4px;
+          background: var(--cta-button-color);
+          /*
+            background: linear-gradient(
+              to bottom,
+              var(--cta-button-color),
+              --colorTertiary-a60
+            );
+          */
+
+          &:hover {
+            /*transform: translateY(-1px);*/
+            background-color: var(--colorTertiary-a80);
+            filter: drop-shadow(0 0 2px gainsboro);
+          }
+
+          &:focus {
+            background-color: var(--cta-button-color);
+          }
+        }
+
+        > .temp1 {
+          display: block;
+
+          position: relative;
+
+          > button {
+            all: unset; /* To remove default style of button*/
+            display: block;
+            cursor: pointer;
+            color: var(--colorSecondary);
+            display: block;
+            border-radius: 50%;
+            height: 36px;
+            width: 36px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 0; /*Important */
+
+            &:hover {
+              background-color: var(--colorTertiary-a10);
+              filter: drop-shadow(0 0 8px gainsboro);
+            } /**/
+          }
+
+          > ul.dropdown {
+            border-radius: 4px;
+            right: 0;
+            float: left;
+            width: 150px;
+            background-color: var(--colorPrimary);
+            box-shadow: 0px 4px 4px 0px rgba(220, 220, 220, 0.116);
+            position: absolute;
+            z-index: 1;
+            display: none;
+            padding: 16px;
+
+            /**/
+            flex-direction: column;
+            gap: 8px;
+
+            > li {
+              display: block;
+              color: var(--colorSecondary);
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+
+          > ul.hover {
+            background-color: black;
+          }
+        }
+
+        > .temp1:hover ul.dropdown {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  > .settings {
+    display: var(--settings-display);
+    /*background-color: teal;*/
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 80px;
+  }
+
+  > main {
+    width: 100%;
+  }
+}
+
+.top {
+  z-index: 1;
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  font-size: 1rem;
+  font-weight: bolder;
+
+  cursor: pointer;
+  border: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 8px;
+  text-decoration: none;
+  line-height: 0; /*Important */
+}
+
+@media screen and (min-width: 1024px) {
+  .app {
+    > header {
+      > div {
+        display: flex;
+        flex-direction: row;
+        gap: 48px;
+
+        > div {
+          display: flex;
+          flex-direction: row;
+
+          > .hamburger {
+            display: none;
+          }
+        }
+      }
+    }
+
+    > p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    > header {
+      > div {
+        > .logo {
+          cursor: pointer;
+          color: #1e3231;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        > nav {
+          display: none;
+          /* filter: blur(4px);*/
+        }
+      }
+    }
+
+    > p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+/*
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+*/
+
+@keyframes heightAnim {
+  0% {
+    max-height: 0px;
+  }
+
+  100% {
+    max-height: 200px;
+  }
+}
+
+@media print {
+  .app {
+    display: none;
+  }
+}

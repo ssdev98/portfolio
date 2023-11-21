@@ -1,0 +1,88 @@
+.services {
+  scroll-margin-top: 80px;
+
+  padding-right: var(--page-padding);
+  padding-left: var(--page-padding);
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  gap: 16px;
+
+  > .title {
+    width: 100%;
+
+    > p {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--text-color);
+      white-space: nowrap; /* To prevent text to go to the next line*/
+    }
+  }
+
+  > p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+
+  > .services-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols-count), 1fr);
+    gap: 16px;
+    color: var(--text-color);
+
+    > .service-card {
+      padding: 16px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-align: center;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+
+      transition-delay: calc(var(--service-item-order) * 50ms);
+
+      > img {
+        aspect-ratio: 1/1;
+        height: var(--page-padding);
+      }
+
+      > .service-title {
+        padding: 8px;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      &:hover {
+        border: 1px solid var(--colorTertiary);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    > p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    > p {
+      font-size: 1rem;
+    }
+  }
+}
